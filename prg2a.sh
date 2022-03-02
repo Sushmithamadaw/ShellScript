@@ -1,3 +1,8 @@
+<<com
+  To check the file is identical or not
+  and to display the permissions
+com
+
 echo -n "Enter file name 1:"
 read f1
 if [ -e $f1 ]
