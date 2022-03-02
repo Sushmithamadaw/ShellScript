@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <<com
   To check the file is identical or not
   and to display the permissions
@@ -7,7 +7,7 @@ com
 #Write a shell script that accepts two filenames as arguments, checks if the permissions for
 #these files are identical and if the permissions are identical, output common permissions
 #otherwise output each filename followed by its permissions.
->>>>>>> c92564507a5b99750a467c975ecadafbf2700155
+>>>>>>> 
 
 echo -n "Enter file name 1:"
 read f1
@@ -33,7 +33,6 @@ f2perm=$1
 =======
 set -- `ls -ld $f1`
 file1perm=$1
->>>>>>> c92564507a5b99750a467c975ecadafbf2700155
 else
 echo "File does not exit"
 exit
@@ -57,5 +56,3 @@ else
 echo "File permisssion are not identical"
 echo "$f1 permission is $file1perm"
 echo "$f2 permission is $file2perm"
->>>>>>> c92564507a5b99750a467c975ecadafbf2700155
-fi
