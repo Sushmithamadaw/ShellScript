@@ -1,0 +1,140 @@
+
+//Largest of 5 number
+var n;
+a=prompt("Enter First numbers");
+b=prompt("Enter Second numbers");
+c=prompt("Enter Third numbers");
+d=prompt("Enter Fourth numbers");
+e=prompt("Enter Fifth numbers");
+lar=a;
+if(b>lar)
+lar=b;
+if(c>lar)
+lar=c;
+if(d>lar)
+lar=d;
+if(e>lar)
+lar=e;
+alert("The Largest Number is:" + lar)
+
+
+
+
+<title>Document</title>
+    <script >
+        function firstN()
+        {
+        var n;
+n=parseInt(prompt("Enter n value"));
+//document.write("First " + n + "Numbers <br/>");
+msg="First " + n + "Numbers \n"
+for(i=1;i<=n;i++){
+   // document.write(i+"<br/>");
+msg+=i + "\n";
+}
+alert(msg);
+        }
+    </script>
+    
+   
+</head>
+<body>
+    <h onclick="firstN();">CLICK</h>
+</body>
+</html>
+
+
+
+
+var n;
+n=prompt("Enter a Number")
+document.write("The first " + n + " Numbers are<br/>");
+for(i=1;i<=n;i++){
+    document.write(i+ "<br/>")
+}
+
+
+var n,n1,n2;
+n1=parseInt(prompt("Enter The First number"));
+n2=parseInt(prompt("Enter The Second number"));
+esum=osum=0;
+eno=ono="";
+for(i=n1;i<=n2;i++)
+{
+if(n%2==0) {
+    esum+=i;
+    eno+=i+"";
+}
+else{
+
+     osum+=i;
+    ono+=i+"";
+}
+}
+    
+    document.write("<br/>Even Numbers " + eno + "=" + esum);
+
+document.write("<br/>Odd Number is  " + onu + "=" + osum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function detail() {
+            
+var pb=document.getElementById("studpb");
+prg=0;
+var i;
+comp=document.getElementsByName("stud");
+for(i=0;i<comp.length;i++){
+if(comp[i].validity.valid){
+prg++;
+}
+}
+pb.value=prg*(100/comp.length);
+}
+    </script>
+
+</head>
+<body>
+    
+    
+  
+    <form action="" method="post">
+        <label name="fname">Name</label>
+        <input type="text" name="stud" onchange="detail()" id="pp" required><br>
+        <label name="email">Email</label>
+        <input type="email" name="stud" onchange="detail()" id="mail" required><br>
+        <label name="date">DOB</label>
+        <input type="date" name="stud" onchange="detail()" id="date" required><br>
+        <label name="Number">Mobile no</label>
+        <input type="number" name="stud" onchange="detail()" id="nm" required><br>
+        <label name="city">City</label>
+        <input type="text" name="stud" onchange="detail()" id="city" required><br>
+
+       
+        <progress id="studpb" value="0" max="100"></progress>
+
+        <div style="width:500px;" height="500px;"></div>
+        <video src="bluesky.mp4" autoplay controls></video>
+
+    </form>
+</body>
+</html>
